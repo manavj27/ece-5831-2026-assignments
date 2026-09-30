@@ -1,25 +1,29 @@
-# A_02 – Python NumPy Tutorial
+# ECE 5831 - Assignment 2: Python NumPy Tutorial
 
-ECE 5831 (2026), Assignment 02.
+This folder contains my work for Assignment 2, which follows the
+[CS231n Python NumPy Tutorial](https://cs231n.github.io/python-numpy-tutorial/).
+The notebook was completed in Jupyter Notebook inside Visual Studio Code.
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `numpy-tutorials.ipynb` | Jupyter notebook (completed in VS Code) working through the NumPy section of the [CS231n Python NumPy Tutorial](https://cs231n.github.io/python-numpy-tutorial/). All cells have been executed and outputs are saved. |
-| `README.md` | This file. |
+| `numpy-tutorials.ipynb` | Jupyter notebook with all of the tutorial's NumPy examples, run with their outputs saved. |
+| `README.md` | This file. It describes the contents of the assignment. |
 
-## Work completed
+## Work Completed
 
-The notebook covers each required topic, with runnable code and short explanations:
+The notebook covers these sections of the tutorial:
 
-1. **NumPy** – importing the library and checking the version.
-2. **Arrays** – creating arrays from lists; `shape`; `zeros`, `ones`, `full`, `eye`, `random.random`.
-3. **Array indexing** – slicing (and how slices are views), mixing integer and slice indexing, integer array indexing, and boolean array indexing.
-4. **Data types** – inferred vs. explicit `dtype`.
-5. **Array math** – elementwise operations (`+ - * /`, `np.sqrt`), `dot` / `@` for vector and matrix products, `np.sum` along axes, and transpose (`.T`).
-6. **Broadcasting** – explicit loop vs. `np.tile` vs. broadcasting, the broadcasting rules, and examples (outer product, adding vectors to rows/columns, scalar multiplication).
-
-## How to run
-
-Open `numpy-tutorials.ipynb` in VS Code with the Jupyter extension, select a Python 3 kernel with NumPy installed (`pip install numpy`), and choose **Run All**.
+- **NumPy**: importing the library and checking its version.
+- **Arrays**: making rank 1 and rank 2 arrays, checking their shape, and using
+  `np.zeros`, `np.ones`, `np.full`, `np.eye` and `np.random.random`.
+- **Array indexing**: slicing (and slices being views of the original data),
+  mixing integer indexing with slices, integer array indexing, and boolean
+  array indexing.
+- **Data types**: letting NumPy pick the `dtype` and setting one explicitly.
+- **Array math**: elementwise operations, `dot` for inner products and
+  matrix multiplication, `np.sum` along an axis, and transposing with `.T`.
+- **Broadcasting**: adding a vector to each row of a matrix three ways
+  (explicit loop, `np.tile`, broadcasting), plus outer products, adding a
+  vector to each column, and multiplying by a scalar.
